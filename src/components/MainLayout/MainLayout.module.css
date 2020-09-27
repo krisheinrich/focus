@@ -1,0 +1,35 @@
+:root {
+  --light-black: #333333;
+  --light-gray: #ccc;
+  --med-gray: #777;
+}
+
+.mainLayout {
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.sidebar {
+  flex: 0 0 30%;
+  min-width: 200px;
+  background: var(--light-black);
+}
+
+.sidebar li {
+  padding: 1rem;
+}
+
+.sidebar li a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--med-gray);
+}
+
+.sidebar li.active a {
+  color: var(--light-gray);
+}
