@@ -95,6 +95,15 @@ class Firebase {
   user = uid => this.db.collection('users').doc(uid);
 
   users = () => this.db.collection('users');
+
+  // Actions API
+
+  actions = (uid) => this.db.collection('actions');
+
+  getCurrentAction = () => {
+    const action = null;
+    return action;
+  }
 }
 
 export default Firebase;
